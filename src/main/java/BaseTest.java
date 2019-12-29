@@ -1,3 +1,4 @@
+import com.github.javafaker.Faker;
 import org.junit.Before;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
@@ -7,6 +8,7 @@ public class BaseTest {
     protected static ThreadLocal<WebDriver> threadLocalDriver = new ThreadLocal<>();
     protected WebDriver driver;
     protected WebDriverWait wait;
+    protected Faker faker;
 
     @Before
     public void start() {
@@ -26,6 +28,5 @@ public class BaseTest {
             driver.quit();
             driver = null;
         }));
-
     }
 }
