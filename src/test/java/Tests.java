@@ -4,7 +4,6 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-// тестовый класс "Tests" использует объект BookingApp, который представляет собой Page Object
 @RunWith(DataProviderRunner.class)
 public class Tests extends BaseTest {
     @Test
